@@ -1,0 +1,182 @@
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.838);
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 167px;
+    left: 300px;
+}
+
+.container .header_logo img{
+    width: 100px;
+    height: 20px;
+    padding: 60px 100px 0px 100px;
+}
+
+.container .main_bd .main_text p span{
+   font-size: 50px;
+   color: hsl(0, 36%, 70%);
+   font-family: sans-serif;
+   margin-bottom: 0px;
+}
+
+.container .main_bd .main_text p{
+   font-size: 40px;
+   color: hsl(0, 6%, 24%);
+   font-family: sans-serif;
+   margin-bottom: 10px;
+   width: 250px;
+   padding: 0px 100px 5px 100px;
+}
+
+.container .main_bd .texts {
+    font-size: 14px;
+    color: hsl(0, 36%, 70%);
+    font-family: sans-serif;
+    width: 380px;
+    padding: 0px 100px 20px 100px;
+}
+
+.container .footer .footer_email p{
+    font-family: sans-serif;
+    border: 2px solid red;
+    width: 350px;
+    padding: 17px;
+    font-size: 12px ;
+    border-radius: 50px;
+    position: relative;
+    margin: 0px 100px 00px 100px;
+}
+
+.container .footer .footer_email .error {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 310px;
+    left:350px;
+}
+
+.container .footer .footer_email button {
+    width: 10px;
+    height: 50px;
+    padding: 13px 35px;
+    box-shadow: 0px 10px 30px hsl(0, 36%, 70%);
+    position: absolute;
+    top: 295px;
+    left: 390px;
+}
+
+.container .footer .footer_text p {
+    font-size: 14px;
+    color: hsl(0, 36%, 70%);
+    font-family: sans-serif;
+    margin-left: 10px;
+    padding: 00px 100px 40px 100px;
+}
+
+
+.container img {
+    height: 430px;
+    position: absolute;
+    top: 0px;
+    left: 550px;
+}
+
+
+@media screen and (max-width: 450px) {
+    .container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 880px;
+    }
+    .container .header_logo img{
+        width: 300px;
+        margin-left: 00px;
+        height: 60px;
+        position: absolute;
+        top: 0px;
+    }
+    
+    .container .main_bd .main_text p span{
+       font-size: 50px;
+       color: hsl(0, 36%, 70%);
+       font-family: sans-serif;
+       margin-bottom: 0px;
+    }
+    
+    .container .main_bd .main_text p{
+       font-size: 40px;
+       color: hsl(0, 6%, 24%);
+       font-family: sans-serif;
+       margin-bottom: 10px;
+       position: absolute;
+       top: 450px;
+       text-align: center;
+       margin-left: 0px;
+       width: 250px;
+    }
+    
+    .container .main_bd .texts {
+        font-size: 14px;
+        color: hsl(0, 36%, 70%);
+        font-family: sans-serif;
+        position: absolute;
+        top: 650px;
+        text-align: center;
+        margin-left: 0px;
+        width: 300px;
+    }
+    
+    .container .footer .footer_email p{
+        font-family: sans-serif;
+        border: 2px solid red;
+        width: 300px;
+        padding: 17px;
+        font-size: 12px ;
+        border-radius: 50px;
+        position: absolute;
+        top: 750px;
+        margin-left: 80px;
+    }
+    
+    .container .footer .footer_email .error {
+        position: absolute;
+        top: 778px;
+        left: 250px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .container .footer .footer_email button {
+        width: 10px;
+        height: 60px;
+        padding: 13px 35px;
+        box-shadow: 0px 10px 30px hsl(0, 36%, 70%);
+        position: absolute;
+        top: 758px;
+        left: 330px;
+    }
+    
+    .container .footer .footer_text p {
+        font-size: 0px;
+    }
+    
+    
+    .container img {
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        top: 130px;
+        left: 0px;
+        object-fit: cover;
+    }
+}
